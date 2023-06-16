@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+    
+{% block content %}
+
+<div class="container">
+    <h2>Enter the Date</h2>
+
+    <form action="calcu" method="POST">
+        {% csrf_token %}
+        <!-- Enter 1st num: <input type="text" name="num1"><br>
+        Enter 2nd num: <input type="text" name="num2"><br>
+        <input type="submit"> -->
+
+        <div class="form-group">
+            <label for="day">Day:</label>
+            <input type="number" id="day" name="day" placeholder="Enter day" min="1" max="31" required>
+        </div>
+        <div class="form-group">
+            <label for="month">Month:</label>
+            <input type="number" id="month" name="month" placeholder="Enter month" min="1" max="12" required>
+        </div>
+        <div class="form-group">
+            <label for="year">Year:</label>
+            <input type="number" id="year" name="year" placeholder="Enter year" min="0" required>
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Submit">
+        </div>
+
+    </form>
+</div>
+
+{% endblock %}
+
+
+
+
+ 
+    
+      
+
+
+

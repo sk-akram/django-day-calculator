@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Django Day Calculator</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 20px;
+        }
+        
+        .container {
+          max-width: 500px;
+          margin: 0 auto;
+        }
+        
+        .form-group {
+          margin-bottom: 20px;
+        }
+        
+        .form-group label {
+          display: block;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        
+        .form-group input[type="number"] {
+          width: 100%;
+          padding: 10px;
+          font-size: 16px;
+        }
+        
+        .form-group input[type="submit"] {
+          background-color: #4CAF50;
+          color: white;
+          padding: 10px 20px;
+          border: none;
+          cursor: pointer;
+          font-size: 16px;
+        }
+        
+        .form-group input[type="submit"]:hover {
+          background-color: #45a049;
+        }
+      </style>
+    </head>
+    <body>
+        {% block content %}
+        {% endblock %}
+    
+    </body>
+</html>
